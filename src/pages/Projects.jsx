@@ -3,9 +3,11 @@ import { projects } from "../data/projects";
 const Projects = () => {
   return ( 
     <>
-      {projects.map((project)=> {
-        {project.name}
-      })}
+      <ul>
+      {projects.map(project =>
+          <li key={project.title}>{project.title}</li>
+      )}
+      </ul>
     </>
   );
 }
