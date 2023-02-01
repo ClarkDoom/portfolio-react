@@ -9,13 +9,14 @@ nav {
 
 }
 
-a {
-  text-decoration: none;
-  color: white;
-}
 #home {
-  font-size: larger;
   margin-left: 10px;
+}
+
+#home a {
+  color: rgb(226, 139, 53);
+  text-decoration: none;
+  font-size: x-large;
 }
 
 #nav-links {
@@ -23,4 +24,12 @@ a {
   display: flex;
   gap: 2em;
   margin-right: 10px;
+  /* color: white; */
 }
+
+#nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+
