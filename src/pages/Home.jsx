@@ -1,11 +1,11 @@
 const Home = () => {
   return ( 
-    <>
-      <h1>Home</h1> 
-      <h2>Brandon</h2>
-      <img width="20%"src="https://live.staticflickr.com/65535/52576744603_f79bb8b828_o.jpg" alt="" />
+    <div id="home-page">
+      <h1>Brandon Hickman</h1>
       <h2>Software Engineer</h2>
-    </>
+      <h3>Denver, Colorado</h3>
+      <p>Proven leader with 10+ years experience</p>
+    </div>
   );
 }
 

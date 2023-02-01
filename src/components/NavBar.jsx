@@ -6,7 +6,7 @@ const NavBar = () => {
     <nav>
       <div id='home'>
         <Link to="/">
-          Brandon Hickman
+          BH Portfolio
         </Link>
       </div>
       <div id="nav-links">

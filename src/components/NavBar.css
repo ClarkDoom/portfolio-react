@@ -4,16 +4,21 @@ nav {
   justify-content: space-between;
   align-items: center;
   height: 60px;
-  background-color: blue;
+  background-color: black;
+  font-family: 'Paytone One', sans-serif;
 
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
 #home {
-  background-color: green;
+  font-size: larger;
+  margin-left: 10px;
 }
 
 #nav-links {
-  background-color: white;
   flex-direction: row;
   display: flex;
   gap: 2em;
