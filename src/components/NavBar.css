@@ -1,0 +1,21 @@
+nav {
+  display: flex;
+  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: blue;
+
+}
+
+#home {
+  background-color: green;
+}
+
+#nav-links {
+  background-color: white;
+  flex-direction: row;
+  display: flex;
+  gap: 2em;
+  margin-right: 10px;
+}
