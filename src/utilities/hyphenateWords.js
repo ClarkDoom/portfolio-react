@@ -5,4 +5,5 @@ function hyphenateWords (str) {
   return rmSpace
 }
 
+
 export {hyphenateWords}

@@ -1,14 +1,17 @@
-import { projects } from "../data/projects";
 import ProjectPreview from "./ProjectPreview";
 
-const ProjectList = ({project}) => {
+const ProjectList = ({projects}) => {
   return ( 
-    <>  
-      <h4>
-        <ProjectPreview title={project.title}/>
-      </h4>
-      
-    </>
+      <ul>
+        {projects.map(project => 
+          <li>
+            <ProjectPreview 
+              title={project.title}
+              image={project.image}
+            />
+          </li>
+        )}
+      </ul>
   );
 }
 

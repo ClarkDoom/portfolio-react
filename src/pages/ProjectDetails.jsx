@@ -1,7 +1,7 @@
 import { projects } from "../data/projects";
 import { useParams } from "react-router-dom";
 import { findProject } from "../utilities/findProject";
-import { hyphenateWords } from "../utilities/hyphenateWords";
+// import { hyphenateWords } from "../utilities/hyphenateWords";
 
 
 const ProjectDetails = () => {
@@ -9,27 +9,27 @@ const ProjectDetails = () => {
   const {projectDetails} = useParams()
 
   const project = findProject(projectDetails)
+
+  console.log(project)
   
-  console.log("project title", project[0].title)
+
 
   
   return ( 
     <>
-      <h1>{project[0].title}</h1>
-
-      <p>{projects[0].description}</p>
-      <img src={projects[0].image} alt="" />
-      <form action={projects[0].repositoryLink}>
+      <h1>{project.title}</h1>
+      <p>{project.description}</p>
+      <img src={project.image} alt="" />
+      <form action={project.repositoryLink}>
         <button>
           Github Repo
         </button>
       </form>
-      <form action={projects[0].deploymentLink}>
+      <form action={project.repositoryLink}>
         <button>
           Deployment Link
         </button>
       </form>
-      
     </>
   );
 }
