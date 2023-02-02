@@ -6,7 +6,6 @@ nav {
   height: 60px;
   background-color: black;
   font-family: 'Paytone One', sans-serif;
-
 }
 
 #home {
@@ -14,7 +13,8 @@ nav {
 }
 
 #home a {
-  color: rgb(226, 139, 53);
+  /* color: rgb(226, 139, 53); */
+  color: white;
   text-decoration: none;
   font-size: x-large;
 }
