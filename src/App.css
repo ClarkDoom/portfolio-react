@@ -18,6 +18,16 @@ body {
 
 }
 
+#home-page img {
+  opacity: 0.5;
+}
+
+#home-page a {
+  color: rgb(226, 140, 53);
+  text-decoration: none;
+  font-size: larger;
+}
+
 #home-details {
 
 }
