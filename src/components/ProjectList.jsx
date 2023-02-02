@@ -2,16 +2,16 @@ import ProjectPreview from "./ProjectPreview";
 
 const ProjectList = ({projects}) => {
   return ( 
-      <ul>
+      <>
         {projects.map(project => 
-          <li>
+          <div>
             <ProjectPreview 
               title={project.title}
               image={project.image}
             />
-          </li>
+          </div> 
         )}
-      </ul>
+      </>
   );
 }
 

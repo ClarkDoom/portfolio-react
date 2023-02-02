@@ -8,7 +8,7 @@ const ProjectPreview = (props) => {
 
 
   return ( 
-    <>
+    <div id="project-list">
       <img 
           src={props.image} 
           alt={props.title}
@@ -21,13 +21,13 @@ const ProjectPreview = (props) => {
         </h3>
 
         <Link to={url}> 
-          <button>
+          <button id='learn-more'>
             Learn more
           </button>
         </Link>
 
       </section>
-    </>  
+    </div>  
   );
 }
 

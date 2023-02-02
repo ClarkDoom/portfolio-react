@@ -17,19 +17,28 @@ const ProjectDetails = () => {
   
   return ( 
     <>
-      <h1>{project.title}</h1>
-      <p>{project.description}</p>
+      <div id="project-details-and-link">
+        <div>
+          <h1>{project.title}</h1>
+          <p>{project.description}</p>
+        </div>
+      
+        <div id='project-links'>
+          <form action={project.repositoryLink}>
+            <button>
+              Github Repo
+            </button>
+          </form>
+          <form action={project.repositoryLink}>
+            <button>
+              Deployment Link
+            </button>
+          </form>
+        </div>
+      </div>
+
       <img src={project.image} alt="" />
-      <form action={project.repositoryLink}>
-        <button>
-          Github Repo
-        </button>
-      </form>
-      <form action={project.repositoryLink}>
-        <button>
-          Deployment Link
-        </button>
-      </form>
+      
     </>
   );
 }
