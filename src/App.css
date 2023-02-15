@@ -1,6 +1,7 @@
 body {
-  background-color: rgb(0, 0, 0);
-  font-family: 'Saira', sans-serif;
+  /* background-color: rgb(28, 28, 28); */
+  background-color: black;
+  font-family: 'Courier Prime', monospace;
   color: white;
 }
 
@@ -21,16 +22,20 @@ body {
 
 #home-page img {
   opacity: 0.5;
+  margin-top: 40px;
 }
 
 #home-page a {
-  color: rgb(226, 140, 53);
+  color: goldenrod;
   text-decoration: none;
   font-size: larger;
 }
 
-#home-details {
-
+#home-details h3 {
+  color: #38A169;
+}
+#home-details p {
+  color: #38A169;
 }
 
 #about-page {
@@ -57,7 +62,7 @@ body {
 }
 
 #contact-page a {
-  color: rgb(226, 140, 53);
+  color: goldenrod;
   text-decoration: none;
   font-size: larger;
 }
@@ -85,4 +90,12 @@ margin-bottom: 20px;
 #project-links {
   align-self:flex-end;
   padding: 20px;
+}
+
+#right-section-divider {
+  border-top: 8px solid goldenrod;
+  border-radius: 5px;
+  margin: 5px;
+  width: 70%;
+  align-self: center;
 }

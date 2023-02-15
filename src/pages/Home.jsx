@@ -13,8 +13,9 @@ const Home = () => {
           <p>Proven leader with 10+ years SaaS experience.</p>
           <a href="/about">Learn More</a>
         </div>
-        <img width="70%"src="/headshot.png" alt="" />
+        <img width="40%"src="/headshot.png" alt="" />
       </div>
+      <div id="right-section-divider"></div>
       {/* About Me */}
         <div id='about-page'>
           <div id='about-me'>
@@ -24,6 +25,7 @@ const Home = () => {
             <h4>Interesting in working together? <a href="/contact">Let's talk.</a></h4>
           </div>
         </div>
+        <div id="right-section-divider"></div>
       {/* Projects */}
       <div id='project-page'>
         <ProjectList 
@@ -31,6 +33,7 @@ const Home = () => {
         />
       </div>
       {/* Contact Me */}
+      <div id="right-section-divider"></div>
       <div id='contact-page'>
         <h1>Let's Connect</h1> 
         <h2>Email me at branhickman@gmail.com</h2>

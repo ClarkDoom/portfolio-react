@@ -6,6 +6,11 @@ nav {
   height: 60px;
   background-color: black;
   font-family: 'Paytone One', sans-serif;
+
+  overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
 }
 
 #home {
@@ -25,6 +30,7 @@ nav {
   gap: 2em;
   margin-right: 10px;
   /* color: white; */
+
 }
 
 #nav-links a {
