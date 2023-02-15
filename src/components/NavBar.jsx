@@ -1,5 +1,6 @@
 import  './NavBar.css'
 import { Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 
 const NavBar = () => {
   return ( 
@@ -11,19 +12,19 @@ const NavBar = () => {
       </div>
       <div id="nav-links">
         <div>
-          <Link to="/about">
+          <HashLink to="/#about-page">
             About
-          </Link>
+          </HashLink>
         </div>
         <div>
-          <Link to="/contact">
+          <HashLink to="/#contact-page">
             Contact
-          </Link>
+          </HashLink>
         </div>
         <div>
-          <Link to="/projects">
+          <HashLink to="/#project-page">
             Projects
-          </Link>
+          </HashLink>
         </div>
         <div>
           <Link to="/resume">

@@ -1,15 +1,15 @@
-import { projects } from "../data/projects";
-import ProjectList from "../components/ProjectList";
+// import { projects } from "../data/projects";
+// import ProjectList from "../components/ProjectList";
 
-const Projects = () => {
+// const Projects = () => {
 
-  return (   
-    <div id='project-page'>
-      <ProjectList 
-        projects={projects}
-      />
-    </div>
-  );
-}
+//   return (   
+//     <div id='project-page'>
+//       <ProjectList 
+//         projects={projects}
+//       />
+//     </div>
+//   );
+// }
 
-export default Projects;
+// export default Projects;
