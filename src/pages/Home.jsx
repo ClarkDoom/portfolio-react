@@ -47,7 +47,9 @@ const Home = () => {
         </div>
         <div id="right-section-divider"></div>
       {/* Projects */}
+      {/* have smaller icons for technology used on each projcect */}
       <div id='project-page'>
+        <h3>Projects</h3>
         <ProjectList 
           projects={projects}
         />

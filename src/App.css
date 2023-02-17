@@ -23,6 +23,9 @@ body {
   opacity: 0.5;
   margin-top: 40px;
 }
+#home-page img:hover {
+  opacity: .8;
+}
 
 #home-page a {
   color: goldenrod;
@@ -45,6 +48,9 @@ body {
 }
 #about-page img {
   opacity: .5;
+}
+#about-page img:hover {
+  opacity: 1;
 }
 
 #about-me {
@@ -87,6 +93,8 @@ body {
 #project-page {
   color: white;
   text-align: center;
+  display: flex;
+  flex-direction: row;
 }
 
 #resume-page {
