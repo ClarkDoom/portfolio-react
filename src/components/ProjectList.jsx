@@ -4,7 +4,7 @@ const ProjectList = ({projects}) => {
   return ( 
       <>
         {projects.map(project => 
-          <div>
+          <div id='project-card'>
             <ProjectPreview 
               title={project.title}
               image={project.image}

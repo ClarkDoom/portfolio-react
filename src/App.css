@@ -94,7 +94,22 @@ body {
   color: white;
   text-align: center;
   display: flex;
+  /* flex-direction: column; */
+}
+
+#project-list {
+  display: flex;
   flex-direction: row;
+}
+
+#project-card {
+  background-color: slategray;
+  border: 2px solid white;
+  border-radius: 20px;
+  width: 40%
+}
+#project-card img {
+  width: 50%
 }
 
 #resume-page {
