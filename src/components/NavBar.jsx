@@ -6,9 +6,9 @@ const NavBar = () => {
   return ( 
     <nav>
       <div id='home'>
-        <Link to="/">
+        <HashLink to="/#home-page">
           BH Portfolio
-        </Link>
+        </HashLink>
       </div>
       <div id="nav-links">
         <div>

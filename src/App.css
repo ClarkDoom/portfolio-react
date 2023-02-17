@@ -17,7 +17,6 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-
 }
 
 #home-page img {
@@ -41,6 +40,8 @@ body {
 #about-page {
   color: white;
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 #about-page img {
   opacity: .5;
@@ -54,6 +55,22 @@ body {
   max-width: 500px;
   justify-content: center;
   
+}
+
+#about-me a {
+  color: goldenrod;
+  text-decoration: none;
+  font-size: larger;
+}
+
+#about-me h1 {
+  color: #38A169;
+}
+#about-me h3 {
+  color: #38A169;
+}
+#about-me p {
+  color: #38A169;
 }
 
 #contact-page {
@@ -93,9 +110,30 @@ margin-bottom: 20px;
 }
 
 #right-section-divider {
-  border-top: 8px solid goldenrod;
+  border-top: 8px solid rgb(21, 20, 20);
   border-radius: 5px;
-  margin: 5px;
-  width: 70%;
+  margin: 10px;
+  width: 30%;
   align-self: center;
+}
+
+#badges-container {
+  display: flex;
+  flex-direction: row;
+}
+#stack-one {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+#stack-two {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+#badges-container img {
+  height:45px;
+  width: 160px;
+  padding: 10px;
+  border-radius: 20px;
 }
