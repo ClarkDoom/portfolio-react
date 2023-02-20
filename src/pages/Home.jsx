@@ -2,6 +2,7 @@ import { projects } from "../data/projects";
 import ProjectList from "../components/ProjectList";
 import { send } from 'emailjs-com';
 import { useState } from "react";
+import GitHubCalendar from "react-github-calendar";
 
 const Home = () => {
 
@@ -30,6 +31,7 @@ const Home = () => {
   const handleChange = (e) => {
     setToSend({ ...toSend, [e.target.name]: e.target.value });
   };
+
 
 
   return (
@@ -65,6 +67,8 @@ const Home = () => {
             <img src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white" alt="mongodb" />
             <img src="https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white" alt="postgres" />
           {/* </div> */}
+          {/* github calendar  */}
+          {/* <GitHubCalendar  username="clarkdoom" /> */}
         </div>
         <div id='about-me'>
           <h1>I build useful technology.</h1>
