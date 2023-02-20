@@ -82,12 +82,21 @@ body {
 #contact-page {
   color: white;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #contact-page a {
   color: goldenrod;
   text-decoration: none;
   font-size: larger;
+}
+
+#contact-page form {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
 }
 
 #project-page {
@@ -149,7 +158,7 @@ margin-bottom: 20px;
 #right-section-divider {
   border-top: 8px solid rgb(21, 20, 20);
   border-radius: 5px;
-  margin: 10px;
+  margin: 20px;
   width: 30%;
   align-self: center;
 }
