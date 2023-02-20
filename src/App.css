@@ -31,6 +31,10 @@ body {
   color: goldenrod;
   text-decoration: none;
   font-size: larger;
+  opacity: .5;
+}
+#home-page a:hover {
+  opacity: 1;
 }
 
 #home-details h3 {
@@ -60,13 +64,27 @@ body {
   align-items: flex-start;
   max-width: 500px;
   justify-content: center;
-  
+}
+
+#about-me-links {
+  display: flex;
+  flex-direction: row;
+  width: 500px;
+  justify-content: space-around;
+
 }
 
 #about-me a {
   color: goldenrod;
   text-decoration: none;
   font-size: larger;
+  opacity: .5;
+}
+#about-me a:hover {
+  color: goldenrod;
+  text-decoration: none;
+  font-size: larger;
+  opacity: 1;
 }
 
 #about-me h1 {
@@ -80,7 +98,7 @@ body {
 }
 
 #contact-page {
-  color: white;
+  color: #38A169;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -97,6 +115,32 @@ body {
   display: flex;
   flex-direction: column;
   align-self: center;
+  color: white;
+}
+
+#contact-page input {
+  background-color: rgb(21, 21, 21);
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+#contact-page textarea {
+  background-color: rgb(21, 21, 21);
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+#contact-page button {
+  background-color: rgb(21, 21, 21);
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+  opacity: .5;
+  font-family: 'Courier Prime', monospace;
+}
+#contact-page button:hover {
+  opacity: 1;
 }
 
 #project-page {
@@ -166,20 +210,25 @@ margin-bottom: 20px;
 #badges-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  align-self:center;
+  max-width: 800px;
+  max-height: 400px;
 }
 #stack-one {
-  padding: 10px;
+  /* padding: 10px;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; */
 }
 #stack-two {
-  padding: 10px;
+  /* padding: 10px;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; */
 }
+
 #badges-container img {
-  height:45px;
-  width: 160px;
+  /* height:45px;
+  width: 160px; */
   padding: 10px;
   border-radius: 20px;
 }

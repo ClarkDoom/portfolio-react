@@ -5,7 +5,7 @@ nav {
   align-items: center;
   height: 60px;
   background-color: black;
-  font-family: 'Paytone One', sans-serif;
+  font-family: 'Courier Prime', monospace;
 
   overflow: hidden;
   position: fixed; /* Set the navbar to fixed position */
@@ -22,6 +22,10 @@ nav {
   color: white;
   text-decoration: none;
   font-size: x-large;
+  opacity: .5;
+}
+#home a:hover {
+  opacity: 1;
 }
 
 #nav-links {
@@ -29,13 +33,18 @@ nav {
   display: flex;
   gap: 2em;
   margin-right: 10px;
-  /* color: white; */
-
+  
 }
 
 #nav-links a {
   color: white;
   text-decoration: none;
+  opacity: .5;
+}
+#nav-links a:hover {
+  color: white;
+  text-decoration: none;
+  opacity: 1;
 }
 
 
