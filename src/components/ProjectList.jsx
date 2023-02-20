@@ -2,16 +2,16 @@ import ProjectPreview from "./ProjectPreview";
 
 const ProjectList = ({projects}) => {
   return ( 
-      <>
-        {projects.map(project => 
-          <div id='project-card'>
+      <div id="project-card-list">
+        {projects.map((project, idx) => 
             <ProjectPreview 
+              project={project}
               title={project.title}
               image={project.image}
+              key={idx}
             />
-          </div> 
         )}
-      </>
+      </div>
   );
 }
 

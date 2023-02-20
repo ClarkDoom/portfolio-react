@@ -1,8 +1,6 @@
 import { projects } from "../data/projects";
 import ProjectList from "../components/ProjectList";
 
-
-
 const Home = () => {
   return ( 
     <>

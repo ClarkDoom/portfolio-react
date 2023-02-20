@@ -94,7 +94,7 @@ body {
   color: white;
   text-align: center;
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
 }
 
 #project-list {
@@ -102,15 +102,29 @@ body {
   flex-direction: row;
 }
 
+#project-card-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 10px;
+}
+
 #project-card {
-  background-color: slategray;
-  border: 2px solid white;
+  background-color: rgb(21, 21, 21);
+  border: 2px solid darkgray;
   border-radius: 20px;
-  width: 40%
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 4px 4px 8px white;
 }
-#project-card img {
-  width: 50%
+#project-image img {
+  width: 60%;
+  padding: 20px;
 }
+
 
 #resume-page {
   color: white;
