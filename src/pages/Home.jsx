@@ -90,46 +90,45 @@ const Home = () => {
       <div id="right-section-divider"></div>
       {/* Projects */}
       {/* have smaller icons for technology used on each projcect */}
-      <div id='project-page'>
-        <h3>Projects</h3>
-        <ProjectList
-          projects={projects}
-        />
-      </div>
-      {/* Contact Me */}
-      <div id="right-section-divider"></div>
-
-      <div id='contact-page'>
-        <h1>Let's Connect</h1>
-
-        <div id='contact-form'>
-          <form onSubmit={onSubmit}>
-            <label htmlFor="from-name">Your Name: </label>
-            <input
-              type='text'
-              name='from_name'
-              placeholder='Your Name'
-              value={toSend.from_name}
-              onChange={handleChange}
-            />
-            <label htmlFor="reply_to">Your Email: </label>
-            <input
-              type='text'
-              name='reply_to'
-              placeholder='Your email'
-              value={toSend.reply_to}
-              onChange={handleChange}
-            />
-            <label htmlFor="message">Message: </label>
-            <textarea
-              name="message" cols="30" rows="10"
-              placeholder='Your message'
-              value={toSend.message}
-              onChange={handleChange}
-            ></textarea>
-            <button type='submit'>Submit</button>
-          </form>
+      <div id="combo-contact-project">
+        <div id='contact-page'>
+          <h1>Let's Connect</h1>
+          <div id='contact-form'>
+            <form onSubmit={onSubmit}>
+              <label htmlFor="from-name">Your Name: </label>
+              <input
+                type='text'
+                name='from_name'
+                placeholder='Your Name'
+                value={toSend.from_name}
+                onChange={handleChange}
+              />
+              <label htmlFor="reply_to">Your Email: </label>
+              <input
+                type='text'
+                name='reply_to'
+                placeholder='Your email'
+                value={toSend.reply_to}
+                onChange={handleChange}
+              />
+              <label htmlFor="message">Message: </label>
+              <textarea
+                name="message" cols="30" rows="10"
+                placeholder='Your message'
+                value={toSend.message}
+                onChange={handleChange}
+              ></textarea>
+              <button type='submit'>Submit</button>
+            </form>
+          </div>
         </div>
+        <div id='project-page'>
+          <h1>Projects</h1>
+          <ProjectList
+            projects={projects}
+          />
+        </div>
+
       </div>
     </>
   );

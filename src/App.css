@@ -97,12 +97,19 @@ body {
   color: #38A169;
 }
 
+#combo-contact-project {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 #contact-page {
   color: #38A169;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 50%;
 }
 
 #contact-page a {
@@ -132,7 +139,7 @@ body {
 }
 #contact-page button {
   background-color: rgb(21, 21, 21);
-  color: white;
+  color: goldenrod;
   border-radius: 10px;
   padding: 10px;
   margin-top: 10px;
@@ -144,10 +151,11 @@ body {
 }
 
 #project-page {
-  color: white;
+  color: #38A169;
   text-align: center;
   display: flex;
   flex-direction: column;
+  width: 50%;
 }
 
 #project-list {
@@ -156,28 +164,44 @@ body {
 }
 
 #project-card-list {
-  display: flex;
-  flex-direction: row;
   justify-content: space-around;
   gap: 10px;
+  
 }
 
 #project-card {
   background-color: rgb(21, 21, 21);
   border: 2px solid darkgray;
   border-radius: 20px;
-  width: 40%;
+  /* width: 40%; */
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  box-shadow: 4px 4px 8px white;
+  margin: 10px;
+}
+
+#project-card button {
+  background-color: rgb(21, 21, 21);
+  color: goldenrod;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+  opacity: .5;
+  font-family: 'Courier Prime', monospace;
+}
+
+#project-card button:hover {
+  opacity: 1;
 }
 #project-image img {
   width: 60%;
   padding: 20px;
 }
 
+#project-image {
+  width: 30%;
+}
 
 #resume-page {
   color: white;
@@ -188,6 +212,23 @@ body {
 
 #learn-more {
 margin-bottom: 20px;
+}
+
+#project-details {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+#technology-used {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#project-details img {
+  width: 5%;
+  padding: 10px
 }
 
 #project-details-and-link {

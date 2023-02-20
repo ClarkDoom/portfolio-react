@@ -19,7 +19,11 @@ const ProjectPreview = (props) => {
           {props.title}
         </h3>
         <h4>Technology Used: </h4>
-        {/* why cant I map through technology used */}
+        <div id='technology-used'>
+          <img src="/icons/html.png" alt="" />
+          <img src="/icons/css.png" alt="" />
+          <img src="/icons/javascript.png" alt="" />
+        </div>
         <Link to={url}> 
           <button id='learn-more'>
             Learn more
