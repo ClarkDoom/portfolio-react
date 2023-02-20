@@ -32,9 +32,11 @@ body {
   text-decoration: none;
   font-size: larger;
   opacity: .5;
+  cursor: pointer;
 }
 #home-page a:hover {
   opacity: 1;
+  cursor: pointer;
 }
 
 #home-details h3 {
@@ -79,12 +81,14 @@ body {
   text-decoration: none;
   font-size: larger;
   opacity: .5;
+  cursor: pointer;
 }
 #about-me a:hover {
   color: goldenrod;
   text-decoration: none;
   font-size: larger;
   opacity: 1;
+  cursor: pointer;
 }
 
 #about-me h1 {
@@ -116,6 +120,7 @@ body {
   color: goldenrod;
   text-decoration: none;
   font-size: larger;
+  cursor: pointer;
 }
 
 #contact-page form {
@@ -123,6 +128,7 @@ body {
   flex-direction: column;
   align-self: center;
   color: white;
+  text-align: left;
 }
 
 #contact-page input {
@@ -153,8 +159,8 @@ body {
 #project-page {
   color: #38A169;
   text-align: center;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   width: 50%;
 }
 
@@ -166,6 +172,8 @@ body {
 #project-card-list {
   justify-content: space-around;
   gap: 10px;
+  display: flex;
+  flex-direction: row;
   
 }
 
@@ -175,10 +183,21 @@ body {
   border-radius: 20px;
   /* width: 40%; */
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: space-around;
   margin: 10px;
+  width: 40%;
+}
+
+#project-card p {
+  color: white;
+}
+
+#project-image {
+  padding: 10px;
+  border-radius: 20px;
+  width: 90%
 }
 
 #project-card button {
@@ -193,14 +212,6 @@ body {
 
 #project-card button:hover {
   opacity: 1;
-}
-#project-image img {
-  width: 60%;
-  padding: 20px;
-}
-
-#project-image {
-  width: 30%;
 }
 
 #resume-page {
@@ -220,6 +231,7 @@ margin-bottom: 20px;
   width: 70%;
 }
 
+
 #technology-used {
   display: flex;
   flex-direction: row;
@@ -227,7 +239,7 @@ margin-bottom: 20px;
 }
 
 #project-details img {
-  width: 5%;
+  width: 20%;
   padding: 10px
 }
 
@@ -236,8 +248,10 @@ margin-bottom: 20px;
 }
 
 #project-links {
-  align-self:flex-end;
   padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 #right-section-divider {

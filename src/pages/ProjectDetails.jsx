@@ -16,7 +16,7 @@ const ProjectDetails = () => {
 
   
   return ( 
-    <>
+    <div id='project-show'>
       <div id="project-details-and-link">
         <div>
           <h1>{project.title}</h1>
@@ -39,7 +39,7 @@ const ProjectDetails = () => {
 
       <img src={project.image} alt="" />
       
-    </>
+    </div>
   );
 }
 
