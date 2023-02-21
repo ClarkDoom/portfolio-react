@@ -1,14 +1,19 @@
 import { hyphenateWords } from "../utilities/hyphenateWords";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import React from 'react';
+import Modal from "./Modal";
+
 
 const ProjectPreview = (props) => {
   
   const url = "/projects/" + hyphenateWords(props.title)
 
-  const [showMore, setShowMore] = useState(false);
+  // const [showMore, setShowMore] = useState(false);
 
+  const [show, setShow] = useState(false)
 
+  
 
 
   return ( 
@@ -24,15 +29,21 @@ const ProjectPreview = (props) => {
 
         <button 
           class='show-more-button'
-          onClick={() => setShowMore(!showMore)}
+          onClick={()=> setShow(true)}
+          // onClick={() => setShowMore(!showMore)}
         >
           Details
         </button>
-        {showMore ? 
+        {/* previous show more button  */}
+        {/* {showMore ? 
           <p class='project-description-invisible'>{props.project.description}</p>
         : ""
-        }
-        
+        } */}
+        <Modal 
+          onClose={()=> setShow(false)} 
+          show={show}
+          project={props.project}
+        />
 
         <h4>Technology Used: </h4>
         <div id='technology-used'>
