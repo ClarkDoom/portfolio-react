@@ -36,7 +36,7 @@ const ProjectPreview = (props) => {
           project={props.project}
         />
 
-        <h4>Technology Used: </h4>
+        <h4>Technology Used </h4>
         <div id='technology-used'>
           {props.project.technologyUsed.map((item) => 
             <TechIcon key={item.name} technologyUsed={item.name}/>

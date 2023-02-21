@@ -116,7 +116,7 @@ nav img {
     margin-top: 50px;
   }
   .items {
-    width: 100%;
+    width: 99.2%;
     border-top: 1px solid black;
     text-align: center;
     margin-right: 0px;
@@ -127,5 +127,9 @@ nav img {
   }
   nav {
     max-width: 575;
+  }
+  ul {
+    padding: 0;
+    list-style-type: none;
   }
 }
