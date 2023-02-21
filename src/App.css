@@ -1,12 +1,10 @@
 body {
-  /* background-color: rgb(28, 28, 28); */
   background-color: black;
   font-family: 'Courier Prime', monospace;
   color: white;
 }
 
 .App {
-  /* text-align: center; */
   display: flex;
   flex-direction: column;
   
@@ -236,7 +234,6 @@ margin-bottom: 20px;
   width: 70%;
 }
 
-
 #technology-used {
   display: flex;
   flex-direction: row;
@@ -282,8 +279,6 @@ margin-bottom: 20px;
 }
 
 #badges-container img {
-  /* height:45px;
-  width: 160px; */
   padding: 10px;
   border-radius: 20px;
 }

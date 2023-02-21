@@ -1,5 +1,4 @@
 import './NavBar.css'
-import { Link } from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
 import React, { useState, useEffect } from 'react';
 
@@ -25,17 +24,17 @@ const NavBar = () => {
   const onResumeClick = () => {
     // using Java Script method to get PDF file
     fetch('resume.pdf').then(response => {
-        response.blob().then(blob => {
-            // Creating new object of PDF file
-            const fileURL = window.URL.createObjectURL(blob);
-            // Setting various property values
-            let alink = document.createElement('a');
-            alink.href = fileURL;
-            alink.download = 'resume.pdf';
-            alink.click();
-        })
+      response.blob().then(blob => {
+        // Creating new object of PDF file
+        const fileURL = window.URL.createObjectURL(blob);
+        // Setting various property values
+        let alink = document.createElement('a');
+        alink.href = fileURL;
+        alink.download = 'resume.pdf';
+        alink.click();
+      })
     })
-}
+  }
   return (
     <nav>
       {(toggleMenu || screenWidth > 500) && (
@@ -70,33 +69,6 @@ const NavBar = () => {
       <button onClick={toggleNav} className="nav-btn">
         <img src="/nav.png" alt="" />
       </button>
-      {/* <div id='home'>
-        <HashLink to="/#home-page">
-          BH Portfolio
-        </HashLink>
-      </div>
-      <div id="nav-links">
-        <div>
-          <HashLink to="/#about-page">
-            About
-          </HashLink>
-        </div>
-        <div>
-          <HashLink to="/#contact-page">
-            Contact
-          </HashLink>
-        </div>
-        <div>
-          <HashLink to="/#project-page">
-            Projects
-          </HashLink>
-        </div>
-        <div>
-          <Link to="/resume">
-            Resume
-          </Link>
-        </div>
-      </div> */}
     </nav>
   );
 }

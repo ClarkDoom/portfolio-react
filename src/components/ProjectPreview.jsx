@@ -1,4 +1,3 @@
-import { hyphenateWords } from "../utilities/hyphenateWords";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import React from 'react';
@@ -8,8 +7,6 @@ import TechIcon from "./TechIcon";
 
 const ProjectPreview = (props) => {
   
-  // const url = "/projects/" + hyphenateWords(props.title)
-
   const [show, setShow] = useState(false)
 
   return ( 

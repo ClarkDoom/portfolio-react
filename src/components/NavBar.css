@@ -5,18 +5,6 @@ nav {
   height: 50px;
   background-color: rgba(21, 21, 21, 0);
   z-index: 1;
-  /* display: flex;
-  justify-content: flex-end;
-  justify-content: space-between;
-  align-items: center;
-  height: 60px;
-  background-color: black;
-  font-family: 'Courier Prime', monospace;
-
-  overflow: hidden; */
-  /* position: fixed; Set the navbar to fixed position */
-  /* top: 0; Position the navbar at the top of the page */
-  /* width: 100%; Full width */
 }
 
 ul {
@@ -71,10 +59,6 @@ ul {
   opacity: 1;
 }
 
-/* nav ul {
-  padding-inline-start: 0px;
-} */
-
 nav img {
   width: 10%;
   background-color: transparent;
@@ -97,7 +81,6 @@ nav img {
   opacity: 1;
   cursor: pointer;  
 }
-
 
 @media screen and (max-width: 575px) {
   #home a {
