@@ -152,11 +152,11 @@ body {
   margin-top: 10px;
   opacity: .5;
   font-family: 'Courier Prime', monospace;
+  cursor: pointer;
 }
 #contact-page button:hover {
   opacity: 1;
 }
-
 
 #project-page {
   color: #38A169;
@@ -177,7 +177,6 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  
 }
 
 #project-card {
@@ -191,6 +190,7 @@ body {
   justify-content: space-around;
   margin: 10px;
   width: 40%;
+  justify-content: flex-start;
 }
 
 #project-card p {
@@ -212,6 +212,7 @@ body {
   margin-top: 10px;
   opacity: .5;
   font-family: 'Courier Prime', monospace;
+  cursor: pointer;
 }
 
 #project-card button:hover {
@@ -240,6 +241,7 @@ margin-bottom: 20px;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 #project-details img {
@@ -258,7 +260,8 @@ margin-bottom: 20px;
   padding: 20px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
+  align-content: center;
 }
 
 #right-section-divider {
@@ -276,16 +279,6 @@ margin-bottom: 20px;
   align-self:center;
   max-width: 800px;
   max-height: 400px;
-}
-#stack-one {
-  /* padding: 10px;
-  display: flex;
-  flex-direction: column; */
-}
-#stack-two {
-  /* padding: 10px;
-  display: flex;
-  flex-direction: column; */
 }
 
 #badges-container img {
@@ -365,6 +358,9 @@ margin-bottom: 20px;
   }
   #project-page {
     width: 100%;
+  }
+  #technology-used img {
+    width: 10%;
   }
 }
 

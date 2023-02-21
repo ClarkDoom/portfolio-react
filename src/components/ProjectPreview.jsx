@@ -3,18 +3,14 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import React from 'react';
 import Modal from "./Modal";
+import TechIcon from "./TechIcon";
 
 
 const ProjectPreview = (props) => {
   
-  const url = "/projects/" + hyphenateWords(props.title)
-
-  // const [showMore, setShowMore] = useState(false);
+  // const url = "/projects/" + hyphenateWords(props.title)
 
   const [show, setShow] = useState(false)
-
-  
-
 
   return ( 
     <div id='project-card'>
@@ -28,17 +24,12 @@ const ProjectPreview = (props) => {
         <h3>{props.title}</h3>
 
         <button 
-          class='show-more-button'
+          className='show-more-button'
           onClick={()=> setShow(true)}
-          // onClick={() => setShowMore(!showMore)}
         >
           Details
         </button>
-        {/* previous show more button  */}
-        {/* {showMore ? 
-          <p class='project-description-invisible'>{props.project.description}</p>
-        : ""
-        } */}
+      
         <Modal 
           onClose={()=> setShow(false)} 
           show={show}
@@ -47,10 +38,11 @@ const ProjectPreview = (props) => {
 
         <h4>Technology Used: </h4>
         <div id='technology-used'>
-          <img src="/icons/html.png" alt="" />
-          <img src="/icons/css.png" alt="" />
-          <img src="/icons/javascript.png" alt="" />
+          {props.project.technologyUsed.map((item) => 
+            <TechIcon key={item.name} technologyUsed={item.name}/>
+            )}
         </div>
+
         <div id='project-links'>
           <Link to={props.project.repositoryLink}> 
             <button id='repo-link'>
