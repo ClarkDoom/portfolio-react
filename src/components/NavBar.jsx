@@ -41,7 +41,7 @@ const NavBar = () => {
       {(toggleMenu || screenWidth > 500) && (
         <ul className="list">
           <li className="items" id="home-link">
-            <HashLink to="/">
+            <HashLink to="/#home-page">
               BH Portfolio
             </HashLink>
           </li>

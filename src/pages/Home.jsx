@@ -23,9 +23,11 @@ const Home = () => {
     )
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
+        alert('Email sent successfully!')
       })
       .catch((err) => {
         console.log('FAILED...', err);
+        alert('Email not sent.')
       });
   };
 
