@@ -3,6 +3,7 @@ import ProjectList from "../components/ProjectList";
 import { send } from 'emailjs-com';
 import { useState } from "react";
 import GitHubCalendar from "react-github-calendar";
+import { HashLink } from "react-router-hash-link";
 
 const Home = () => {
 
@@ -74,7 +75,7 @@ const Home = () => {
           <h1>I build useful technology.</h1>
           <p>People-Focused Leader who has successfully built fast paced tech startups. Currently pivoting to a web development career track because I'm at a point in my life where I'm able pursue my passions and designing and creating technology has always been a dream job.</p>
           <h3>Based out of Denver, Colorado</h3>
-          <h4>Interested in working together? <a href="/contact">Let's talk.</a></h4>
+          <h4>Interested in working together? <HashLink to="/#contact-page">Let's talk.</HashLink></h4>
 
           <div id='about-me-links'>
             <h2>
