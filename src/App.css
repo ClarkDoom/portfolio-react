@@ -128,7 +128,8 @@ body {
   flex-direction: column;
   align-self: center;
   color: white;
-  text-align: left;
+  text-align: center;
+  margin: 40px;
 }
 
 #contact-page input {
@@ -156,6 +157,7 @@ body {
   opacity: 1;
 }
 
+
 #project-page {
   color: #38A169;
   text-align: center;
@@ -174,6 +176,7 @@ body {
   gap: 10px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   
 }
 
@@ -197,7 +200,8 @@ body {
 #project-image {
   padding: 10px;
   border-radius: 20px;
-  width: 90%
+  width: 90%;
+  /* position: relative; */
 }
 
 #project-card button {
@@ -241,6 +245,9 @@ margin-bottom: 20px;
 #project-details img {
   width: 20%;
   padding: 10px
+}
+#project-details p {
+  font-size: x-small;
 }
 
 #project-details-and-link {

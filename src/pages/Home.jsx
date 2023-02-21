@@ -99,7 +99,7 @@ const Home = () => {
           <h1>Let's Connect</h1>
           <div id='contact-form'>
             <form onSubmit={onSubmit}>
-              <label htmlFor="from-name">Your Name: </label>
+              <label htmlFor="from-name">Name </label>
               <input
                 type='text'
                 name='from_name'
@@ -107,7 +107,7 @@ const Home = () => {
                 value={toSend.from_name}
                 onChange={handleChange}
               />
-              <label htmlFor="reply_to">Your Email: </label>
+              <label htmlFor="reply_to">Email </label>
               <input
                 type='text'
                 name='reply_to'
@@ -115,7 +115,7 @@ const Home = () => {
                 value={toSend.reply_to}
                 onChange={handleChange}
               />
-              <label htmlFor="message">Message: </label>
+              <label htmlFor="message">Message </label>
               <textarea
                 name="message" cols="30" rows="10"
                 placeholder='Your message'
