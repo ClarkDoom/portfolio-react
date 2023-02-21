@@ -302,15 +302,17 @@ margin-bottom: 20px;
   top: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,.5);
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 2;
 }
 
 .modal-content {
-  width: 500px;
-  background-color: #fff;
+  border-radius: 10px;
+  width: 90%;
+  background-color: rgba(21, 20, 20, 1);
 }
 
 .modal-header, .modal-footer {
@@ -319,12 +321,12 @@ margin-bottom: 20px;
 
 .modal-title {
   margin: 0;
+  font-size: large;
+  color: goldenrod;
 }
 
 .modal-body {
   padding: 10px;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
 }
 
 @media screen and (max-width: 575px) {
