@@ -70,6 +70,7 @@ nav img {
 
 #resume-btn {
   color: goldenrod;
+  font-family: 'Courier Prime', monospace;
   text-decoration: none;
   opacity: .5;
   background-color: black;
