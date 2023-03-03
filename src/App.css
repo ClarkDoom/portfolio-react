@@ -99,11 +99,28 @@ body {
   color: #38A169;
 }
 
-#combo-contact-project {
+#about-me button {
+  background-color: rgb(21, 21, 21);
+  color: goldenrod;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+  opacity: .5;
+  font-family: 'Courier Prime', monospace;
+  cursor: pointer;
+}
+#about-me button:hover {
+  opacity: 1;
+}
+
+.projects-container {
+  /* width: 100%; */
+}
+/* #combo-contact-project {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-}
+} */
 
 #contact-page {
   color: #38A169;
@@ -111,7 +128,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50%;
 }
 
 #contact-page a {
@@ -135,6 +151,7 @@ body {
   color: white;
   border-radius: 10px;
   padding: 10px;
+  font-family: 'Courier Prime', monospace;
 }
 #contact-page textarea {
   background-color: rgb(21, 21, 21);
@@ -161,7 +178,6 @@ body {
   text-align: center;
   /* display: flex;
   flex-direction: column; */
-  width: 50%;
 }
 
 #project-list {
@@ -187,7 +203,7 @@ body {
   align-items: center;
   justify-content: space-around;
   margin: 10px;
-  width: 40%;
+  width: 25%;
   justify-content: flex-start;
 }
 
@@ -317,11 +333,60 @@ margin-bottom: 20px;
   padding: 10px;
 }
 
+/* contact modal  */
+
+.contact-modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.contact-modal-content {
+  border-radius: 10px;
+  width: 30%;
+  background-color: rgba(21, 20, 20, 1);
+}
+
+.contact-modal-header, .contact-modal-footer {
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+}
+.contact-modal-footer button {
+  background-color: rgb(21, 21, 21);
+  color: goldenrod;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+  opacity: .5;
+  font-family: 'Courier Prime', monospace;
+  cursor: pointer;
+}
+.contact-modal-footer button:hover {
+opacity: 1;
+}
+
+.contact-modal-title {
+  margin: 0;
+  font-size: large;
+  color: goldenrod;
+}
+
+.contact-modal-body {
+}
+
 @media screen and (max-width: 575px) {
-  #combo-contact-project {
+  /* #combo-contact-project {
     display: flex;
     flex-direction: column;
-  }
+  } */
   #about-page {
     flex-direction: column;
   }

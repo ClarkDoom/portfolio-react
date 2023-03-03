@@ -1,6 +1,8 @@
-import { HashLink } from "react-router-hash-link";
+import { useState } from "react";
+import ContactModal from "./ContactModal";
 
 const About = () => {
+  const [show, setShow] = useState(false)
   return (
     <>
       <div id='about-page'>
@@ -24,7 +26,11 @@ const About = () => {
           <h1>I build useful technology.</h1>
           <p>People-Focused Leader who has successfully built fast paced tech startups. Currently pivoting to a web development career track because I'm at a point in my life where I'm able pursue my passions and designing and creating technology has always been a dream job.</p>
           <h3>Based out of Denver, Colorado</h3>
-          <h4>Interested in working together? <HashLink to="/#contact-page">Let's talk.</HashLink></h4>
+          <h4>Interested in working together? <button onClick={() => setShow(true)}>Let's talk.</button></h4>
+          <ContactModal 
+          onClose={()=> setShow(false)} 
+          show={show}
+        />
           <div id='about-me-links'>
             <h2>
               <a href="https://www.linkedin.com/in/peoplefocusedleader/">

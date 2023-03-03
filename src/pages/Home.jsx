@@ -18,11 +18,12 @@ const Home = () => {
         <img width="40%" src="/headshot.png" alt="" />
       </div>
       <div id="right-section-divider"></div>
-      <About />
-      <div id="combo-contact-project">
-        <Contact />
+      <div className="projects-container">
         <Projects />
       </div>
+      <About />
+      {/* <div id="combo-contact-project"> */}
+      {/* </div> */}
     </>
   );
 }
