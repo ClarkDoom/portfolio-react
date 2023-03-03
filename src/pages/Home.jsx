@@ -21,6 +21,7 @@ const Home = () => {
       <div className="projects-container">
         <Projects />
       </div>
+      <div id="right-section-divider"></div>
       <About />
       {/* <div id="combo-contact-project"> */}
       {/* </div> */}
