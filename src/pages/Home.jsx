@@ -23,6 +23,10 @@ const Home = () => {
       </div>
       <div id="right-section-divider"></div>
       <About />
+      <div className="footer">
+        <img src="/spock.png" alt="" />
+        <p>The glory of creation is in its infinite diversity and the ways our differences combine to create meaning and beauty.</p>
+      </div>
     </>
   );
 }
