@@ -3,12 +3,9 @@ import Contact from "../components/Contact";
 import Projects from "../components/Projects";
 import React from "react";
 
-import ReactGA from 'react-ga';
-const TRACKING_ID = "G-7MR4KGM2F9"; // YOUR_OWN_TRACKING_ID
-ReactGA.initialize(TRACKING_ID);
+
 
 const Home = () => {
-  ReactGA.pageview(window.location.pathname + window.location.search);
   return (
     <>
       <div id="home-page">
