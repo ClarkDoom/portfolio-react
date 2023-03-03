@@ -2,7 +2,13 @@ import About from "../components/About";
 import Contact from "../components/Contact";
 import Projects from "../components/Projects";
 
+import ReactGA from 'react-ga';
+
 const Home = () => {
+
+  ReactGA.initialize('G-X8ERPGSYKZ')
+  ReactGA.pageview(window.location.pathname + window.location.search);
+  
   return (
     <>
       <div id="home-page">
