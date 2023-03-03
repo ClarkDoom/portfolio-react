@@ -1,13 +1,20 @@
 import About from "../components/About";
 import Contact from "../components/Contact";
 import Projects from "../components/Projects";
+import React from "react";
 
 import ReactGA from 'react-ga';
+
+import { useEffect } from "react";
 
 const Home = () => {
 
   ReactGA.initialize('G-7MR4KGM2F9')
-  ReactGA.pageview(window.location.pathname + window.location.search);
+  
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname);
+  }, [])
+  
 
   return (
     <>
