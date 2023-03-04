@@ -38,33 +38,28 @@ const NavBar = () => {
   return (
     <nav>
       {(toggleMenu || screenWidth > 500) && (
-        <ul className="list">
-          <li className="items" id="home-link">
+        <div className="list">
+          <p className="items" id="home-link">
             <HashLink to="/#home-page">
               BH Portfolio
             </HashLink>
-          </li>
-          <li className="items">
+          </p>
+          <p className="items">
             <HashLink to="/#about-page">
               About
             </HashLink>
-          </li>
-          <li className="items">
-            <HashLink to="/#contact-page">
-              Contact
-            </HashLink>
-          </li>
-          <li className="items">
+          </p>
+          <p className="items">
             <HashLink to="/#project-page">
               Projects
             </HashLink>
-          </li>
-          <li className="items">
+          </p>
+          <p className="items">
             <button id="resume-btn" onClick={onResumeClick}>
               Download Resume
             </button>
-          </li>
-        </ul>
+          </p>
+        </div>
       )}
       <button onClick={toggleNav} className="nav-btn">
         <img src="/nav.png" alt="" />

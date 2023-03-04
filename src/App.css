@@ -291,15 +291,21 @@ margin-bottom: 20px;
 #badges-container {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  align-self:center;
-  max-width: 800px;
-  max-height: 400px;
+  text-align: center;
 }
 
 #badges-container img {
   padding: 10px;
   border-radius: 20px;
+}
+
+.badge-section {
+  display: flex;
+  flex-direction: column;
+  width: 33%
+}
+.badge-section h2 {
+ font-size: medium;
 }
 
 /* modal experiment  */
@@ -428,8 +434,8 @@ text-align: center;
     justify-content: center;
   }
   #about-me-links {
-    flex-direction: column;
-    max-width: 300px;
+    flex-direction: row;
+    max-width: 100%;
   
   }
   #contact-page {
@@ -455,6 +461,10 @@ text-align: center;
   .footer img {
     width: 10%;
     padding: 5px;
+  }
+
+  .contact-modal-content {
+    width: 80%;
   }
 }
 
