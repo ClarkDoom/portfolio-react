@@ -112,7 +112,7 @@ body {
 }
 
 #about-me button {
-  background-color: rgb(21, 21, 21);
+  background-color: black;
   color: goldenrod;
   border-radius: 10px;
   padding: 10px;
@@ -213,10 +213,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 10px;
   width: 30%;
-  justify-content: flex-start;
 
   border-radius: 20px;
   background-color: rgb(21, 21, 21);
@@ -241,7 +240,7 @@ body {
 }
 
 #project-card button {
-  background-color: rgb(21, 21, 21);
+  background-color: black;
   color: goldenrod;
   border-radius: 10px;
   padding: 10px;
