@@ -421,6 +421,7 @@ text-align: center;
   #home-page img {
     order: 1;
     margin-top: 50px;
+    opacity: 1;
   }
   #home-details {
     order: 2;
