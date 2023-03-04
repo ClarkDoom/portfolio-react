@@ -215,7 +215,7 @@ body {
   align-items: center;
   justify-content: space-between;
   margin: 10px;
-  width: 30%;
+  width: 20%;
 
   border-radius: 20px;
   background-color: rgb(21, 21, 21);
@@ -492,6 +492,11 @@ text-align: center;
 
   .contact-modal-content {
     width: 80%;
+  }
+}
+@media screen and (max-width: 925px) {
+  #project-card {
+    width: 100%
   }
 }
 

@@ -45,13 +45,13 @@ const NavBar = () => {
             </HashLink>
           </p>
           <p className="items">
-            <HashLink to="/#about-page">
-              About
+            <HashLink to="/#project-page">
+              Projects
             </HashLink>
           </p>
           <p className="items">
-            <HashLink to="/#project-page">
-              Projects
+            <HashLink to="/#about-page">
+              About
             </HashLink>
           </p>
           <p className="items">
