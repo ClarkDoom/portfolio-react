@@ -41,7 +41,7 @@ const About = () => {
               </a>
             </h2>
           </div>
-          <p>People-Focused Leader who has successfully built fast paced tech startups. Currently pivoting to a web development career track because I'm at a point in my life where I'm able pursue my passions and designing and creating technology has always been a dream job.</p>
+          <p>People-Focused Leader who has successfully built fast paced SaaS startups. I have pivoted to a web development career and am doing freelance work but am currently in the market for a full-time position. I have always been a techie and I'm at a point in my life where I want to prop up that side of myself and use my natural interest in technology to do work that is meaningful, engaging, and rewarding.</p>
           <h3>Based out of Denver, Colorado</h3>
           <h4>Interested in working together? <button onClick={() => setShow(true)}>Let's talk.</button></h4>
           <ContactModal
