@@ -23,14 +23,14 @@ const NavBar = () => {
 
   const onResumeClick = () => {
     // using Java Script method to get PDF file
-    fetch('resume.pdf').then(response => {
+    fetch('brandon-hickman-resume.pdf').then(response => {
       response.blob().then(blob => {
         // Creating new object of PDF file
         const fileURL = window.URL.createObjectURL(blob);
         // Setting various property values
         let alink = document.createElement('a');
         alink.href = fileURL;
-        alink.download = 'resume.pdf';
+        alink.download = 'brandon-hickman-resume.pdf';
         alink.click();
       })
     })
