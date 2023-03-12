@@ -61,6 +61,7 @@ const NavBar = () => {
           </p>
         </div>
       )}
+
       <button onClick={toggleNav} className="nav-btn">
         <img src="/nav.png" alt="" />
       </button>
