@@ -14,14 +14,14 @@ const projects = [
     deploymentLink: "https://syndicate.fly.dev/",
     technologyUsed: [ {name: "/icons/javascript.png"}, {name: "/icons/css.png"}, {name: "/icons/html.png"}, {name: '/icons/ejs.png'}, {name: '/icons/bootstrap.png'}, {name: '/icons/node.png'}, {name: '/icons/express.png'}, {name: '/icons/flyio.png'}, {name: '/icons/googleauth.png'} ]
   },
-  // {
-  //   title: "CAST",
-  //   description: "This app was born out of a desire to optimize a very manual casting process. Instead of sifting through resumes one by one, Cast allows Talent to setup a profile and have Casting Directors reach out to them. It's more simple, streamined, and modern.",
-  //   image: "https://live.staticflickr.com/65535/52724413636_47e7d003d4_o.png",
-  //   repositoryLink: "https://github.com/hpweisberg/cast-front-end",
-  //   deploymentLink: "https://castapp.netlify.app/",
-  //   technologyUsed: [ {name: "/icons/javascript.png"}, {name: "/icons/css.png"}, {name: "/icons/html.png"}, {name: "/icons/react.png"}, {name: "/icons/mongoose.png"}, {name: "/icons/node.png"}, {name: "/icons/express.png"}, {name: "/icons/netlify.png"}, {name: "/icons/flyio.png"} ]
-  // },
+  {
+    title: "CAST",
+    description: "This app was born out of a desire to optimize a very manual casting process. Instead of sifting through resumes one by one, Cast allows Talent to setup a profile and have Casting Directors reach out to them. It's more simple, streamined, and modern.",
+    image: "https://live.staticflickr.com/65535/52724413636_47e7d003d4_o.png",
+    repositoryLink: "https://github.com/hpweisberg/cast-front-end",
+    deploymentLink: "https://castapp.netlify.app/",
+    technologyUsed: [ {name: "/icons/javascript.png"}, {name: "/icons/css.png"}, {name: "/icons/html.png"}, {name: "/icons/react.png"}, {name: "/icons/mongoose.png"}, {name: "/icons/node.png"}, {name: "/icons/express.png"}, {name: "/icons/netlify.png"}, {name: "/icons/flyio.png"} ]
+  },
   {
     title: "SELL",
     description: "Used media marketplace that differentiates from other ecommerce apps by putting a focus on trading as well as selling/buying.",
